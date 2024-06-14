@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreatheWell - Promoting Clean Air and Good Health</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">BreatheWell</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Get Involved</a></li>
+            </ul>
+            <button class="cta-btn">Get Started</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero fade-in-on-scroll">
+            <div class="hero-content">
+                <h1>Promoting Clean Air for Better Health</h1>
+                <p>Discover green solutions for healthier living and sustainable environments.</p>
+                <div class="hero-actions">
+                    <button class="cta-btn">Join the Movement</button>
+                    <button class="secondary-btn">Watch Video</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="photos/hero-image.avif" alt="Green Air Landscape">
+            </div>
+        </section>
+
+        <section class="air-quality fade-in-on-scroll">
+            <div class="air-quality-info">
+                <h2>Real-time Air Quality Index (AQI) of Major Cities</h2>
+                <div class="chart-container">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <p>The Air Quality Index (AQI) is a scale used to communicate how polluted the air currently is or how polluted it is forecast to become. The table below defines the AQI scale according to the US-EPA 2016 standard:</p>
+                <table class="aqi-table">
+                    <thead>
+                        <tr>
+                            <th>AQI Range</th>
+                            <th>Air Pollution Level</th>
+                            <th>Health Implications</th>
+                            <th>Cautionary Statement (for PM2.5)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0 - 50</td>
+                            <td>Good</td>
+                            <td>Air quality is considered satisfactory, and air pollution poses little or no risk</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>51 - 100</td>
+                            <td>Moderate</td>
+                            <td>Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution.</td>
+                            <td>Active children and adults, and people with respiratory disease, such as asthma, should limit prolonged outdoor exertion.</td>
+                        </tr>
+                        <tr>
+                            <td>101 - 150</td>
+                            <td>Unhealthy for Sensitive Groups</td>
+                            <td>Members of sensitive groups may experience health effects. The general public is not likely to be affected.</td>
+                            <td>Active children and adults, and people with respiratory disease, such as asthma, should limit prolonged outdoor exertion.</td>
+                        </tr>
+                        <tr>
+                            <td>151 - 200</td>
+                            <td>Unhealthy</td>
+                            <td>Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effects.</td>
+                            <td>Active children and adults, and people with respiratory disease, such as asthma, should avoid prolonged outdoor exertion; everyone else, especially children, should limit prolonged outdoor exertion.</td>
+                        </tr>
+                        <tr>
+                            <td>201 - 300</td>
+                            <td>Very Unhealthy</td>
+                            <td>Health warnings of emergency conditions. The entire population is more likely to be affected.</td>
+                            <td>Active children and adults, and people with respiratory disease, such as asthma, should avoid all outdoor exertion; everyone else, especially children, should limit outdoor exertion.</td>
+                        </tr>
+                        <tr>
+                            <td>300+</td>
+                            <td>Hazardous</td>
+                            <td>Health alert: everyone may experience more serious health effects.</td>
+                            <td>Everyone should avoid all outdoor exertion.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <section class="features fade-in-on-scroll">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="photos/eco-friendly-icon.svg" alt="Eco-Friendly Icon">
+                </div>
+                <h3>Eco-Friendly Solutions</h3>
+                <p>Explore eco-friendly solutions to improve air quality and promote better health outcomes.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="photos/cost-savings-icon.svg" alt="Cost Savings Icon">
+                </div>
+                <h3>Health Benefits</h3>
+                <p>Discover the health benefits of cleaner air and its positive impact on well-being.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="photos/low-maintenance-icon.svg" alt="Low Maintenance Icon">
+                </div>
+                <h3>Efficient Solutions</h3>
+                <p>Learn about efficient and sustainable solutions for healthier environments.</p>
+            </div>
+        </section>
+        
+        <section class="projects fade-in-on-scroll">
+            <h2>Our Projects</h2>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="photos/project1.jpg" alt="Urban Green Spaces">
+                </div>
+                <div class="project-details">
+                    <h3>Urban Green Spaces</h3>
+                    <p>Creating more green spaces in urban areas to improve air quality and promote healthier living.</p>
+                    <a href="#" class="cta-link">Learn More</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="photos/project2.avif" alt="Public Awareness Campaigns">
+                </div>
+                <div class="project-details">
+                    <h3>Public Awareness Campaigns</h3>
+                    <p>Educating the public about the importance of clean air and its impact on health.</p>
+                    <a href="#" class="cta-link">Learn More</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="photos/project3.jpg" alt="Join Our Movement">
+                </div>
+                <div class="project-details">
+                    <h3>Join Our Movement</h3>
+                    <p>Get involved in our initiatives and help promote clean air for better health.</p>
+                    <a href="#" class="cta-link">Learn More</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="get-involved fade-in-on-scroll">
+            <h2>Get Involved</h2>
+            <div class="involvement-card">
+                <div class="involvement-icon">
+                    <img src="photos/volunteer-icon.svg" alt="Volunteer Icon">
+                </div>
+                <h3>Become a Volunteer</h3>
+                <p>Join our team of volunteers dedicated to improving air quality and good health.</p>
+                <a href="#" class="cta-link">Learn More</a>
+            </div>
+            <div class="involvement-card">
+                <div class="involvement-icon">
+                    <img src="photos/share-icon.svg" alt="Share Icon">
+                </div>
+                <h3>Share Information</h3>
+                <p>Help us spread information about the benefits of clean air and its impact on health.</p>
+                <a href="#" class="cta-link">Share Now</a>
+            </div>
+            <div class="involvement-card">
+                <div class="involvement-icon">
+                    <img src="photos/donate-icon.svg" alt="Donate Icon">
+                </div>
+                <h3>Make a Donation</h3>
+                <p>Your donations support our efforts to promote clean air and better health outcomes.</p>
+                <a href="#" class="cta-link">Donate Now</a>
+            </div>
+            <div class="involvement-card">
+                <div class="involvement-icon">
+                    <img src="photos/campaign-icon.svg" alt="Campaign Icon">
+                </div>
+                <h3>Participate in Campaigns</h3>
+                <p>Join our campaigns to advocate for cleaner air and healthier communities.</p>
+                <a href="#" class="cta-link">Join Campaigns</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">BreatheWell</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Get Involved</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="#"><img src="photos/facebook-icon.svg" alt="Facebook"></a>
+                <a href="#"><img src="photos/twitter-icon.svg" alt="Twitter"></a>
+                <a href="#"><img src="photos/instagram-icon.svg" alt="Instagram"></a>
+            </div>
+        </div>
+        <p>&copy; 2024 BreatheWell. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
